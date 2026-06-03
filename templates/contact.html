@@ -1,0 +1,61 @@
+
+
+{% block content %}
+<section id="contact" class="py-5 high ">
+  <div class="container-fluid">
+    <div class="text-center mb-5 text-light">
+      <h2 class="fw-bold ">📩 Contact Me</h2>
+      <p class="text-light">Have a question or want to work together? Feel free to reach out!</p>
+      
+    </div>
+
+    <div class="row justify-content-around d-flex flex-wrap-reverse " >
+
+    <div class="col-md-4 d-flex flex-column-reverse align-items-center  ">
+      <h1 class=" text-light fw-bold Thanks">Thanks For Visiting 🧡</h1>
+       
+<br>
+ 
+      <div class="d-flex justify-content-around mx-5 gap-5">
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      </div>
+    
+    
+      <div class="col-md-4 ">
+        <form method="POST" action="" >
+          {% csrf_token %}
+          
+           <div class="inputfiled">
+
+        
+            <input type="text" name="name" class="form-control " id="name" placeholder="Your Name" required>
+       
+
+            <input type="email" name="email" class="form-control " id="email" placeholder="you@example.com" required>
+          
+ 
+
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Message Subject" required>
+         
+
+  
+            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+     
+
+            <button type="submit" class="btn btn-dark px-5">Send Message</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</section>
+<h6 class="text-center text-light py-5 "> @ Design & Devloped By Roshan Choudhary 🧡</h6>
+{% endblock %}
